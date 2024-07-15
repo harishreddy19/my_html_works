@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hover Dropdown in Table</title>
+    <style>
+        /* Basic styles for the table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 15px;
+            position: relative; /* Required for dropdown positioning */
+        }
+
+        /* Hide the dropdown content by default */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%; /* Position it below the td */
+            left: 0;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            min-width: 200px; /* Adjust width as needed */
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 12px 16px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Show the dropdown content on hover */
+        td:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td>About Us
+            <div class="dropdown-content">
+                <a href="#">About MRCET</a>
+                <a href="#">Vision & Mission</a>
+                <a href="#">Management</a>
+                <a href="#">Principal</a>
+                <a href="#">360 Degree View</a>
+            </div>
+        </td>
+        <td>Admissions
+            <div class="dropdown-content">
+                <a href="#">Programs Offered</a>
+                <a href="#">Application & Eligibility</a>
+                <a href="#">Documents to be Submitted</a>
+                <a href="#">Tuition Fee Payment Details</a>
+                <a href="#">Scholarship</a>
+            </div>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

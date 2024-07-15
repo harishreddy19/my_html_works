@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<table>
+  <tr>
+    <td>About
+      <div class="about">
+      <a href="#">About MRCET</a>
+      <a href="#">Vision & Mission</a>
+      <a href="#">Management</a>
+      <a href="#">Principal</a>
+      <a href="#">360 Degree View</a>
+      </div>
+    </td>
+    <td>Admissions
+      <div class="about">
+        <a href="#">Programs Offered</a>
+        <a href="#">Application & Eligibility</a>
+        <a href="#">Documents to be Submitted</a>
+        <a href="#">Tuition Fee Payment Details</a>
+        <a href="#">Scholarship</a>
+      </div>
+    </td>
+    <td>Acadamics
+      <div class="about">
+        <a href="#">Syllabus</a>
+        <a href="#">Course Structure</a>
+        <a href="#">Time Table</a>
+        <a href="#">Acadamic Calander</a>
+        <a href="#">Acadamic Regulations</a>
+      </div>
+    </td>
+    <td>Departments
+      <div class="about">
+        <a href="#">CSE</a>
+        <a href="#">EEE</a>
+        <a href="#">ECE</a>
+        <a href="#">MECH</a>
+        <a href="#">CIVIL</a>
+      </div>
+    </td>
+    <td>Facilities
+      <div class="about">
+        <a href="#">Transport</a>
+        <a href="#">Hostel</a>
+        <a href="#">Libiary</a>
+        <a href="#">Labs</a>
+        <a href="#">Sports</a>
+      </div>
+    </td>
+    <td>Downloads
+      <div class="about">
+        <a href="#">Acadamic Calender</a>
+        <a href="#">Time Table</a>
+        <a href="#">Syllabus</a>
+        <a href="#">Question Bank</a>
+        <a href="#">Digital Notes</a>
+        <a href="#">Lab Manuval</a>
+      </div>
+    </td>
+  </tr>
+</table>
+<style>
+     table{
+       width: 100px;
+       border-collapse: collapse;
+     }
+     td{
+       padding:16px ;
+       position: relative;
+     }
+     .about {
+       display: none;
+       position: absolute;
+       top: 100%;
+       left: 0;
+       background-color: #f9f9f9;
+       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+       z-index: 1;
+       min-width: 200px;
+
+     }
+     .about a {
+       display: block;
+       padding: 12px 16px;
+       text-decoration: none;
+       color: black;
+     }
+     .about a:hover {
+       background-color: orange;
+     }
+
+     td:hover .about {
+       display: block;
+     }
+  </style>
+</body>
+</html>

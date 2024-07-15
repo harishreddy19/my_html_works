@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+</head>
+
+<body>
+
+<b><h2>Student Details Form</h2></b>
+<form>
+    First Name : <input class="fn" type="text" id="firstname" name="firstname" placeholder="first name" required><br><br>
+    Last Name : <input class="ln" type ="text" id="lastname" name="lastname" placeholder="last name" required><br><br>
+    Email : <input type="email" id="email" name="email" required><br><br>
+    password : <input type="password" id="pass" name="password" required><br><br>
+    Mobile No : <input type="text" id="num" name="number" placeholder="xxxxxxxxxx" required><br><br>
+    Gender : <input type="radio" id="male" name="male">Male <input type="radio" id="fm" name="fename">FeMale<br><br>
+    Course : <input type="checkbox" id="check" name="checkbox">CSE
+    <input type="checkbox" id="check" name="checkbox">ECE
+    <input type="checkbox" id="check" name="checkbox">EEE
+    <input type="checkbox" id="check" name="checkbox">MECH<br><br>
+    State : <select name ="state">
+    <option value="ap">AP</option>
+    <option value="telangana">Telangana</option>
+    <option value="uttar pradesh">Uttar Pradesh</option>
+</select><br>
+    <br>
+    Address : <textarea rows="4 " cols="12" required     ></textarea> <br><br>
+    <button class="submit">Submit</button>
+    <button class="reset">reset</button>
+</form>
+<style>
+    h2{
+        text-align: center;
+        color: red;
+        font-weight: bold;
+        font-size: xx-large;
+    }
+    form{
+        text-align: center;
+        font-size: larger;
+        border:black;
+    }
+    .submit{
+        background-color: lightblue;
+        color: black;
+        border: none;
+        size: 500px;
+        border-radius: 6px;
+    }
+    .reset{
+        background-color: lightblue;
+        color: black;
+        border: none;
+        size: 500px;
+        margin-left: 200px;
+        border-radius: 6px;
+    }
+</style>
+</body>
+</html>
